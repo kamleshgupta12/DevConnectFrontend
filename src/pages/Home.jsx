@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <div className="banner h-[90vh] bg-gray-800 text-white flex flex-col justify-center  items-center py-10 px-4 sm:px-6 lg:px-8">
             <div className="text-center flex flex-col justify-center  items-center gap-2 ">
-                <h1 className="text-5xl font-bold text-white bg-black p-5 bg-opacity-40">Welcome to DevConnect</h1>
-                <span className=" text-xl text-gray-300 flex flex-col justify-center font-bold bg-black p-5 bg-opacity-60 items-center">
+                <h1 className="sm:text-6xl text-xl font-bold text-white bg-black p-5 bg-opacity-40">Welcome to DevConnect</h1>
+                <span className=" sm:text-xl text-sm text-gray-300 flex flex-col justify-center font-bold bg-black p-5 bg-opacity-60 items-center">
                     My Developer Social Network Platform.
                 </span>
 

@@ -6,7 +6,7 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 export default function WelcomePage() {
     return (
         <div className="flex flex-col items-center justify-center 
-        h-[85vh] bg-richblack-800 text-white">
+        h-[85vh] bg-[#161D29] text-white">
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}

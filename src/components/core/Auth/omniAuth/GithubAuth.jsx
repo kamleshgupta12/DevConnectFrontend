@@ -82,7 +82,7 @@ const GithubAuth = () => {
 
   return (
     <button
-      className="flex items-center justify-center gap-2 w-[320px] p-3 border border-gray-300 rounded-lg shadow-md bg-white hover:bg-gray-100 transition-all duration-200"
+      className="flex items-center justify-center gap-2 w-[290px] p-3 border border-gray-300 rounded-lg shadow-md bg-white hover:bg-gray-100 transition-all duration-200"
       onClick={handleClick} 
     >
       <FaGithub className="text-xl text-black" />

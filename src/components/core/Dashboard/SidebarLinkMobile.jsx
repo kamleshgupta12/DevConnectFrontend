@@ -15,7 +15,7 @@ export default function SidebarLinkMobile({ link, iconName }) {
   return (
     <NavLink
       to={link.path}
-      className={`relative px-5 py-2 text-sm font-medium ${
+      className={`relative px-4 py-2 text-sm font-medium ${
         matchRoute(link.path)
           ? "bg-[#0f4b1d] text-white"
           : "bg-opacity-0 text-richblack-300"

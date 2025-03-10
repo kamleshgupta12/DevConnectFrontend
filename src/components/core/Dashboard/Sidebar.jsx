@@ -67,7 +67,7 @@ const Sidebar = () => {
         </div>
         {/* mobile sidebar */}
         <div className='flex lg:hidden fixed bottom-0 justify-between border-t 
-        border-richblack-600 items-center px-2  bg-richblack-900 z-50 w-full overflow-y-auto'>
+        border-richblack-600 items-center   bg-richblack-900 z-50 w-full overflow-y-auto'>
             <div className='flex flex-row gap-1 w-full justify-between'>
                 {
                     sidebarLinks.map((link) => {

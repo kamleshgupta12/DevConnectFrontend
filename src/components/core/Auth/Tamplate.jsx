@@ -8,8 +8,8 @@ import GoogleAuth from "./omniAuth/GoogleAuth";
 function Tamplate({ title, des1, des2, img, formType, setLogged }) {
     return ( 
         <>
-            <div className="p-5  w-full flex  justify-center items-center sm:flex-col md:flex-row m-auto rounded-3xl gap-4   ">
-                <div className=" w-[450px] border border-richblack-600 flex flex-col gap-3 rounded-md  bg-richblack-800   shadow-md p-3 ">
+            <div className="p-10  w-full flex  justify-center items-center sm:flex-col md:flex-row m-auto rounded-3xl gap-4   ">
+                <div className=" w-[300px] border border-richblack-600 flex flex-col gap-3 rounded-md  bg-richblack-800   shadow-md p-3 ">
                     <div>
                         <h1 className="text-[25px] text-center font-bold text-[#308d46]">{title}</h1>
                     </div>

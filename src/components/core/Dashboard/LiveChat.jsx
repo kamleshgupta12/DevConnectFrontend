@@ -14,92 +14,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 const socket = io(process.env.REACT_APP_SOCKET_BASE_URL);
 
-// const dummyUsers = [
-//     {
-//         _id: "user1",
-//         firstName: "Arif",
-//         lastName: "Gupta",
-//         email: "alice@example.com",
-//         image: "https://randomuser.me/api/portraits/women/1.jpg",
-//     },
-//     {
-//         _id: "user2",
-//         firstName: "Harman",
-//         lastName: "Preet",
-//         email: "bob@example.com",
-//         image: "https://randomuser.me/api/portraits/men/2.jpg",
-//     },
-//     {
-//         _id: "user3",
-//         firstName: "Arshad",
-//         lastName: "Ansari",
-//         email: "charlie@example.com",
-//         image: "https://randomuser.me/api/portraits/men/3.jpg",
-//     },
-//     {
-//         _id: "user5",
-//         firstName: "Kamlesh",
-//         lastName: "Gupta",
-//         email: "ethan@example.com",
-//         image: "https://randomuser.me/api/portraits/men/5.jpg",
-//     },
-//     {
-//         _id: "user6",
-//         firstName: "Sumit",
-//         lastName: "Tiwari",
-//         email: "fiona@example.com",
-//         image: "https://randomuser.me/api/portraits/women/6.jpg",
-//     },
-//     {
-//         _id: "user7",
-//         firstName: "Lakhveer",
-//         lastName: "Gupta",
-//         email: "george@example.com",
-//         image: "https://randomuser.me/api/portraits/men/7.jpg",
-//     },
-//     {
-//         _id: "user8",
-//         firstName: "Sunny",
-//         lastName: "Gupta",
-//         email: "hannah@example.com",
-//         image: "https://randomuser.me/api/portraits/women/8.jpg",
-//     },
-//     {
-//         _id: "user9",
-//         firstName: "deepak",
-//         lastName: "Miller",
-//         email: "ian@example.com",
-//         image: "https://randomuser.me/api/portraits/men/9.jpg",
-//     },
-//     {
-//         _id: "user10",
-//         firstName: "Julia",
-//         lastName: "Evans",
-//         email: "julia@example.com",
-//         image: "https://randomuser.me/api/portraits/women/10.jpg",
-//     },
-//     {
-//         _id: "user11",
-//         firstName: "Kevin",
-//         lastName: "Scott",
-//         email: "kevin@example.com",
-//         image: "https://randomuser.me/api/portraits/men/11.jpg",
-//     },
-//     {
-//         _id: "user12",
-//         firstName: "Lily",
-//         lastName: "Taylor",
-//         email: "lily@example.com",
-//         image: "https://randomuser.me/api/portraits/women/12.jpg",
-//     },
-//     {
-//         _id: "user13",
-//         firstName: "Michael",
-//         lastName: "Anderson",
-//         email: "michael@example.com",
-//         image: "https://randomuser.me/api/portraits/men/13.jpg",
-//     },
-// ];
 
 export default function ChatPage() {
     const [users, setUsers] = useState([]);
@@ -167,7 +81,8 @@ export default function ChatPage() {
     // };
 
     return (
-        <div className="flex h-[85vh]">
+<div className="hidden xl:flex h-[85vh]">
+
             <div className="w-1/3 bg-gray-200 border border-richblack-700 rounded-l-lg flex flex-col overflow-hidden">
                 <div className="bg-richblack-900 p-4 sticky top-0 left-0 right-0 z-10">
                     <div className="flex items-center justify-between">
@@ -204,7 +119,7 @@ export default function ChatPage() {
                 </div>
             </div>
             <div className="w-2/3 flex flex-col border border-richblack-700 border-l-0 rounded-r-lg overflow-hidden">
-                <div className="bg-richblack-800 text-white p-4 font-bold rounded-tr-lg">
+                <div className="bg-[#161D29] text-white p-4 font-bold rounded-tr-lg">
                     {selectedUser ? (
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-1">
