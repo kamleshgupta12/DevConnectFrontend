@@ -5,7 +5,8 @@ import { FaHeart, FaRegHeart, FaComment } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 
-const socket = io("http://localhost:4000");
+const socket = io(process.env.REACT_APP_SOCKET_BASE_URL);
+console.log(process.env.REACT_APP_SOCKET_BASE_URL,"process");
 
 const PostList = () => {
     const [posts, setPosts] = useState([]);

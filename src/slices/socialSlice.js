@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:4000/api/social";
+const API_BASE_URL = `${process.env.REACT_APP_SOCKET_BASE_URL}api/social`;
 
 // ✅ Fetch Social Links (Async)
 export const fetchSocialLinks = createAsyncThunk(

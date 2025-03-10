@@ -32,7 +32,7 @@ import io from "socket.io-client";
 import { addNotification } from "./slices/notificationSlice.js";
 import LiveChat from "./components/core/Dashboard/LiveChat.jsx";
 
-const socket = io("http://localhost:4000");
+const socket = io(process.env.REACT_APP_SOCKET_BASE_URL);
 
 const Navbar = lazy(() => import('./components/common/Navbar'))
 

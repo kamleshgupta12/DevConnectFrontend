@@ -12,7 +12,7 @@ import { setAllUser } from "../../../slices/Allusers";
 import { useDispatch, useSelector } from "react-redux";
 
 
-const socket = io("http://localhost:4000/");
+const socket = io(process.env.REACT_APP_SOCKET_BASE_URL);
 
 // const dummyUsers = [
 //     {
