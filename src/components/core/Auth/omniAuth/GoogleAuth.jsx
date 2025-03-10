@@ -59,7 +59,7 @@ const GoogleAuth = () => {
     <div className="flex justify-center">
       <GoogleLogin
         size="large"
-        width="290px"
+        width="320px"
         logo_alignment="center"
         onSuccess={onSuccess}
         onError={onError}
