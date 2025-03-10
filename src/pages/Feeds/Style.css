@@ -1,0 +1,23 @@
+.bg-richblack-800 {
+    --tw-bg-opacity: 1;
+    border:"2px solid red";
+    background-color: rgb(22 29 41 / var(--tw-bg-opacity));
+    z-index: 999;
+}
+
+.filter-dropdown-select {
+    background-color: #fcfcfc !important;
+    border: 2px solid #c2c5c7 !important;
+    border-radius: 7px !important;
+    bottom: 10px !important;
+    color: #333 !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    height: 39px !important;
+    margin-top: 2px !important;
+    padding: 8px !important;
+    position: relative !important;
+    text-transform: capitalize !important;
+}
+
+  
