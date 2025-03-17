@@ -19,7 +19,6 @@ export default function ProfileDropdown() {
   useOnClickOutside(ref, () => setOpen(false));
 
   if (!user) {
-    console.log("No user data available");
     return <div className="flex gap-2"><Link to="/login">
       <button className="rounded-[8px] border border-richblack-700 bg-richblack-800 px-[4px] py-[4px] text-richblack-100">
         Log in

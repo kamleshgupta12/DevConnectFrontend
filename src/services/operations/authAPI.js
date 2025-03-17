@@ -66,7 +66,7 @@ export function signUp(
         otp,
       })
 
-      console.log("SIGNUP API RESPONSE............", response)
+      // console.log("SIGNUP API RESPONSE............", response)
 
       if (!response.data.success) {
         throw new Error(response.data.message)
@@ -93,7 +93,7 @@ export function login(email, password, navigate) {
         password,
       })
 
-      console.log("LOGIN API RESPONSE............", response)
+      // console.log("LOGIN API RESPONSE............", response)
 
       if (!response.data.success) {
         throw new Error(response.data.message)

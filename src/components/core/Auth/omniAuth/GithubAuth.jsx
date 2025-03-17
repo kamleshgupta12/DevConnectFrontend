@@ -19,8 +19,8 @@ const GithubAuth = () => {
   const paramsUrl = new URLSearchParams(location.search);
   const code = paramsUrl.get("code");
 
-  console.log("Current URL:", window.location.href);
-  console.log("Extracted Code:", code);
+  // console.log("Current URL:", window.location.href);
+  // console.log("Extracted Code:", code);
 
   const getAccessToken = async (code) => {
     Swal.fire({

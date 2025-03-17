@@ -29,9 +29,8 @@ const GoogleAuth = () => {
 
       if (data.success) {
         dispatch(googleSignin({ token: data.token }));
-        // localStorage.setItem("authToken", data.token);
-       dispatch(setToken(data.token))
-       dispatch(setUser(data.user))
+        dispatch(setToken(data.token))
+        dispatch(setUser(data.user))
 
         localStorage.setItem("token", JSON.stringify(data.token))
         localStorage.setItem("user", JSON.stringify(data.user))
