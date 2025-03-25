@@ -16,7 +16,6 @@ body ,html{
 
 
 .banner {
-  background-image: url('./pages/banner.gif');
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat; 
