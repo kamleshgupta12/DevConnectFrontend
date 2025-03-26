@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import ProfileDropdown from "../core/Auth/ProfileDropDown";
-import { apiConnector } from "../../services/apiconnector";
-import { categories } from "../../services/apis";
 import { IoMdNotifications } from "react-icons/io";
 import { setNotifications } from "../../slices/notificationSlice";
 
@@ -15,8 +13,7 @@ function Navbar() {
 const dispatch = useDispatch()
   const location = useLocation();
 
-  const [subLinks, setSubLinks] = useState([]);
-  const [loading, setLoading] = useState(false);
+
 
   useEffect(() => {
       const fetchNotifications = async () => {
@@ -33,7 +30,6 @@ const dispatch = useDispatch()
         } catch (error) {
           console.error("Error fetching notifications:", error);
         } finally {
-          setLoading(false);
         }
       };
   

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setAllUser, viewUser } from "../../slices/Allusers";
-import { deleteUserApi, getAllUserApi, viewUserApi } from '../../services/api/allUserAPI';
+import { setAllUser } from "../../slices/Allusers";
+import { deleteUserApi, getAllUserApi } from '../../services/api/allUserAPI';
 import avtar from '../../assets/Logo/stock-vector-profile-placeholder-image-gray-silhouette-no-photo-1153673752.jpg'
 import Swal from "sweetalert2";
 

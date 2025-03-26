@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { toast } from "react-hot-toast";
-import { json } from "react-router-dom";
 
 const initialState = {
     cart: localStorage.getItem("cart")

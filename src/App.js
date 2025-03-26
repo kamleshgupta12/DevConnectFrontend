@@ -11,7 +11,7 @@ import Error from './pages/Error'
 import Settings from './components/core/Dashboard/Settings/index'
 import { ACCOUNT_TYPE } from "./utils/constants";
 import { useDispatch, useSelector } from "react-redux";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import Postform from "./pages/Postform";
 import Home from "./pages/Home";
 import AllUsers from './components/Admin/AllUsers.jsx'
@@ -26,7 +26,6 @@ import CreateQuiz from "./pages/Quiz/CreateQuiz.jsx";
 import Feeds from "./pages/Feeds/Feeds.jsx";
 import Posts from './pages/Feeds/Posts.jsx'
 import Quiz from './pages/Feeds/TotalQuiz.jsx'
-import NotificationRecieve from "./pages/Notification.jsx";
 import NotificationList from "./pages/Notification.jsx";
 import io from "socket.io-client";
 import { addNotification } from "./slices/notificationSlice.js";

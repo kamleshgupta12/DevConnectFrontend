@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { toast } from "react-hot-toast";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
@@ -24,7 +24,6 @@ const Postform = () => {
   const [loading, setLoading] = useState(false);
   const { token } = useSelector(state => state.auth);
   const { user } = useSelector((state) => state.profile);
-  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
