@@ -76,9 +76,9 @@ export default function ChatPage() {
         setInput("");
     };
 
-    // const exitHandler = () => {
-    //     navigate('/');
-    // };
+    const exitHandler = () => {
+        navigate('/');
+    };
 
     return (
 <div className="hidden xl:flex h-[85vh]">
@@ -98,11 +98,11 @@ export default function ChatPage() {
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
-                    {/* <div className="flex gap-1  mt-3">
+                    <div className="flex gap-1  mt-3">
                         <button className="bg-[#308d46] bg-opacity-50 px-4 py-1 rounded-full text-richblack-5">All</button>
                         <button className="bg-richblack-600 px-4 py-1 rounded-full text-richblack-5">Unread</button>
                         <button className="bg-richblack-600 px-4 py-1 rounded-full text-richblack-5">Favourites</button>
-                    </div> */}
+                    </div>
                 </div>
                 <div className="flex-1 overflow-y-auto custom-scrollbar">
                     {filteredUsers.map((user) => (
