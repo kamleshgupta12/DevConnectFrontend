@@ -103,7 +103,7 @@ const AllUsers = () => {
 
     useEffect(() => {
         fetchUsers();
-    }, []);
+    },);
 
 
     return (
