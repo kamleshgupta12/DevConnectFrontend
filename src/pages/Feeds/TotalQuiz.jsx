@@ -7,7 +7,6 @@ import './Style.css'
 const TotalQuiz = () => {
   const [quizzes, setQuizzes] = useState([]);
   const [selectedQuiz, setSelectedQuiz] = useState(null);
-  const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -69,7 +68,7 @@ const TotalQuiz = () => {
           )}
 
           {/* Quiz Questions */}
-          {selectedQuiz && !submitted && (
+          {selectedQuiz && (
             <div className="w-full mt-6 flex flex-col items-center text-[#308d46]">
               <Quiz
                 quiz={{

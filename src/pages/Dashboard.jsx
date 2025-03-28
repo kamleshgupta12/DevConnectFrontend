@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux"
 import { Outlet } from "react-router-dom"
 import Sidebar from "../components/core/Dashboard/Sidebar"
-import LiveChat from "../components/core/Dashboard/LiveChat"
 
 
 
@@ -25,7 +24,6 @@ function Dashboard() {
           <Outlet />
         </div>
       </div>
-      {/* <LiveChat /> */}
     </div>
   )
 }

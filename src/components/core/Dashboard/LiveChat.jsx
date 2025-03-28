@@ -3,7 +3,6 @@ import moment from "moment";
 import { useEffect, useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import Welcome from "./Chat/Welcome";
-import { useNavigate } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
 import "./index.css";
 import { BsFillSendFill } from "react-icons/bs";
@@ -11,7 +10,6 @@ import { getAllUserApi } from "../../../services/api/allUserAPI";
 import { setAllUser } from "../../../slices/Allusers";
 import { useDispatch, useSelector } from "react-redux";
 import { FaApple, FaComments, FaGooglePlay } from "react-icons/fa";
-import { FaHandshakeSimple } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 
@@ -24,7 +22,6 @@ export default function ChatPage() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
     const [searchTerm, setSearchTerm] = useState("");
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     const userId = localStorage.getItem("id");
     const { allUsers } = useSelector((state) => state.allusers);
