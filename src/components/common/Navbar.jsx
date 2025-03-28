@@ -5,42 +5,48 @@ import { Link, useLocation } from "react-router-dom";
 import ProfileDropdown from "../core/Auth/ProfileDropDown";
 import { IoMdNotifications } from "react-icons/io";
 import { setNotifications } from "../../slices/notificationSlice";
+import { MdDeveloperMode } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
+
 
 function Navbar() {
   const { token } = useSelector((state) => state.auth);
   const { user } = useSelector((state) => state.profile);
   const notifications = useSelector((state) => state.notifications.list);
-const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const location = useLocation();
 
 
 
   useEffect(() => {
-      const fetchNotifications = async () => {
-        if (!user) return;
-  
-        try {
-          const response = await fetch(`${process.env.REACT_APP_BASE_URL}/alert/get-notifications/${user._id}`);
-          const data = await response.json();
-  
-          if (data.success) {
-            dispatch(setNotifications(data.notifications));
-  
-          }
-        } catch (error) {
-          console.error("Error fetching notifications:", error);
-        } finally {
+    const fetchNotifications = async () => {
+      if (!user) return;
+
+      try {
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/alert/get-notifications/${user._id}`);
+        const data = await response.json();
+
+        if (data.success) {
+          dispatch(setNotifications(data.notifications));
+
         }
-      };
-  
-      fetchNotifications();
-    }, [dispatch, user]);
+      } catch (error) {
+        console.error("Error fetching notifications:", error);
+      } finally {
+      }
+    };
+
+    fetchNotifications();
+  }, [dispatch, user]);
 
   return (
     <div className={`flex h-16 items-center justify-center border-b-[1px] border-b-richblack-700 z-0 ${location.pathname !== "/" ? "bg-richblack-800" : ""} transition-all duration-200`}>
       <div className="flex w-[100%] pl-4 md:px-8 lg:px-8 items-center justify-between">
         <Link to="/">
-          <h1 className="text-white font-extrabold text-2xl">DevConnect</h1>
+      <div className="flex items-center gap-1">
+      <span><FaCode className="text-white text-4xl"/></span>
+      <h1 className="text-white font-extrabold text-2xl">DevConnect</h1>
+      </div>
         </Link>
 
         <div className="hidden items-center gap-x-4 md:flex">
@@ -48,9 +54,9 @@ const dispatch = useDispatch()
 
 
           }
-          {user && user?.accountType !== "Admin" &&  (
+          {user && user?.accountType !== "Admin" && (
             <Link to="/dashboard/message" className="relative">
-              <div className=""><BiSolidMessageDetail className="text-3xl text-richblack-100"/></div>
+              <div className=""><BiSolidMessageDetail className="text-3xl text-richblack-100" /></div>
             </Link>
           )}
           {token && (

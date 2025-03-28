@@ -70,8 +70,6 @@ export default function ChatPage() {
             }
         };
         fetchMessages();
-
-        // Listen for incoming messages
         socket.on("receiveMessage", (newMessage) => {
             console.log("Message received:", newMessage);
             setMessages((prev) => [...prev, newMessage]);
@@ -106,7 +104,7 @@ export default function ChatPage() {
     };
 
     return (
-        <div className="h-[85vh] flex border border-richblack-600 overflow-hidden">
+        <div className="h-[85vh] flex border rounded-lg border-richblack-600 overflow-hidden">
             <div className="w-1/3 bg-gray-200 border-r border-richblack-600 flex flex-col">
                 <div className="bg-richblack-900 p-4 text-white sticky top-0">
                     <h2 className="text-2xl font-bold">Chats</h2>
@@ -119,7 +117,7 @@ export default function ChatPage() {
                     />
                 </div>
 
-                <div className="flex-1 overflow-y-auto bg-richblack-800">
+                <div className="flex-1 overflow-y-auto bg-richblack-800 custom-scrollbar">
                     {filteredUsers.map((user) => (
                         <div
                             key={user._id}
@@ -146,7 +144,7 @@ export default function ChatPage() {
                         <Welcome />
                     )}
                 </div>
-                <div className="flex-1 overflow-y-auto p-4 space-y-2">
+                <div className="flex-1 overflow-y-auto p-4 space-y-2 custom-scrollbar">
                     {messages.map((msg, index) => {
                         const isSender = msg.senderId === userId;
                         const sender = isSender ? user : selectedUser; 

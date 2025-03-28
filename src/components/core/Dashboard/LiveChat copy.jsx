@@ -85,7 +85,7 @@ export default function ChatPage() {
     return (
         <>
             <div className="hidden md:flex h-[85vh]">
-                <div className="w-1/3 bg-gray-200 border border-richblack-700 rounded-l-lg flex flex-col overflow-hidden">
+                <div className=" w-1/3 bg-gray-200 border border-richblack-700 rounded-l-lg flex flex-col overflow-hidden">
                     <div className="bg-richblack-900 p-4 sticky top-0 left-0 right-0 z-10">
                         <div className="flex items-center justify-between">
                             <h2 className="text-2xl font-bold text-richblack-50">Chats</h2>
@@ -155,7 +155,7 @@ export default function ChatPage() {
                             <Welcome />
                         )}
                     </div>
-                    <div className="flex-1 overflow-y-auto p-4 space-y-2 bg-gray-100 flex flex-col ">
+                    <div className="flex-1 overflow-y-auto p-4 space-y-2 bg-gray-100 flex flex-col  ">
                         {messages
                             .filter(
                                 (msg) =>
