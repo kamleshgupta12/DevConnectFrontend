@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"  # Build command
-  publish = "build"  # For CRA (change to "dist" for Vite)
+  command = "npm run build"  # Build command for CRA
+  publish = "build"  # Output directory for CRA
 
 [[redirects]]
   from = "/*"
