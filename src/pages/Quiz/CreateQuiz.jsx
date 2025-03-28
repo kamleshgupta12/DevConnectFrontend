@@ -33,7 +33,7 @@ const CreateQuiz = ({ onQuizSubmit }) => {
     if (!quizTitle.trim() || questions.length === 0) return;
     try {
       const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/quiz/create-quiz`, { quizTitle, questions , userId:id });
-      console.log("✅ Quiz saved:", response.data);
+      console.log(" Quiz saved:", response.data);
 
       setQuizTitle("");
       setQuestions([]);

@@ -28,5 +28,3 @@ root.render(
       </GoogleOAuthProvider>
    </Provider>
 );
-
-

@@ -13,16 +13,16 @@ export default function WelcomePage() {
                 transition={{ duration: 0.8 }}
                 className="text-center"
             >
-             <div className="flex justify-center">
-             <FaComments className="text-6xl text-[#308d46] mb-4 animate-pulse" />
-             </div>
-                <h1 className="text-4xl font-bold mb-2 text-richblack-5">Welcome to <span className="text-[#308d46]">DevConnect Chat</span></h1>
-                <p className="text-lg  mb-6 text-richblack-100">A seamless Peer-to-Peer chat experience for developers.</p>
+                <div className="flex justify-center">
+                    <FaComments className="text-6xl text-[#308d46] mb-4 animate-pulse" />
+                </div>
+                <h1 className="text-4xl mb-2 text-richblack-5">Welcome to <span className="text-[#308d46]">DevConnect Chat</span></h1>
+                <p className="text-md  mb-6 text-richblack-100">A seamless Peer-to-Peer chat experience for developers.</p>
                 <motion.button
-                 
+
                     className="text-4xl text-richblack-5"
                 >
-              <FaHandshakeSimple/>
+                    <FaHandshakeSimple />
                 </motion.button>
             </motion.div>
         </div>

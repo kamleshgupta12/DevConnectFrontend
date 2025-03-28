@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import { useDispatch } from "react-redux";
 import { googleSignin } from "../../../../slices/onmiAuthSlice";
@@ -65,6 +65,5 @@ const GoogleAuth = () => {
       />
     </div>
   );
-};
-
+}; 
 export default GoogleAuth;
