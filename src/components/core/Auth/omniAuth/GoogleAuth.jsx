@@ -11,7 +11,6 @@ import { setToken } from "../../../../slices/authSlice";
 const GoogleAuth = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const id = localStorage.getItem('token')
 
   const onSuccess = async (credentialResponse) => {
     const token = credentialResponse?.credential;
