@@ -6,7 +6,7 @@ import courseReducer from '../slices/courseSlice'
 import socialReducer from '../slices/socialSlice'
 import allusersReducer from '../slices/Allusers'
 import notificationReducer from '../slices/notificationSlice'
-
+import chatReducer from '../slices/chatSlice'
 
 const rootReducer = combineReducers({
     auth: authReducer,
@@ -15,7 +15,8 @@ const rootReducer = combineReducers({
     course: courseReducer,
     social: socialReducer,
     allusers: allusersReducer,
-    notifications: notificationReducer
+    notifications: notificationReducer,
+    chat: chatReducer
 
 })
 export default rootReducer;
