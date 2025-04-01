@@ -5,8 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 import ProfileDropdown from "../core/Auth/ProfileDropDown";
 import { IoMdNotifications } from "react-icons/io";
 import { setNotifications } from "../../slices/notificationSlice";
-import { MdDeveloperMode } from "react-icons/md";
-import { FaCode } from "react-icons/fa";
+import { LuCodeXml } from "react-icons/lu";
+
 
 
 function Navbar() {
@@ -44,8 +44,8 @@ function Navbar() {
       <div className="flex w-[100%] pl-4 md:px-8 lg:px-8 items-center justify-between">
         <Link to="/">
       <div className="flex items-center gap-1">
-      <span><FaCode className="text-white text-4xl"/></span>
-      <h1 className="text-white font-extrabold text-2xl">DevConnect</h1>
+      <span><LuCodeXml className="text-white text-4xl"/></span>
+      <h1 className="text-white font-black text-2xl">DevConnect</h1>
       </div>
         </Link>
 
