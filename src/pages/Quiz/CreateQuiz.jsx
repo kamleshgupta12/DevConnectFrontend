@@ -84,7 +84,6 @@ const CreateQuiz = ({ onQuizSubmit }) => {
         </ul>
       </nav>
       <h1 className="text-3xl font-medium text-center text-richblack-5 mb-6">Create a Quiz</h1>
-
       <div className="flex flex-col items-center justify-center px-6">
         <div className="w-full max-w-2xl rounded-lg border-[1px] border-richblack-700 bg-richblack-800 p-8">
           <input

@@ -21,6 +21,7 @@ const ReceiveNotification = () => {
 
         if (data.success) {
           dispatch(setNotifications(data.notifications));
+
         }
       } catch (error) {
         console.error("Error fetching notifications:", error);
@@ -28,6 +29,7 @@ const ReceiveNotification = () => {
         setLoading(false);
       }
     };
+
 
     fetchNotifications();
   }, [dispatch, user]);
@@ -63,7 +65,7 @@ const ReceiveNotification = () => {
               key={index}
               className="p-3 border-b border-richblack-800 text-white flex items-center space-x-3 transition-opacity duration-500"
             >
-              {/* User Image */}
+              {console.log(notification)}
               {notification.user?.image && (
                 <img
                   src={notification.user.image}
