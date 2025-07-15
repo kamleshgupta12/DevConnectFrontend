@@ -14,7 +14,7 @@ const Home = () => {
             const userData = await detectUserEnvironment();
             
             // Send data to your Node.js API
-            const response = await fetch('http://localhost:4000/api/auth/user-data', {
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL}/auth/user-data`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
